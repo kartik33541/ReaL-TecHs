@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive About Us page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper{
+            width:100%;
+            height:109vh;
+            background: linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%),url('techimage.png');
+            background-position:center;
+            background-size: cover;
+        }
+
+        .nav-bar{
+            width: 1200px;
+            height: 67px;
+            margin:auto;
+        }
+
+        .icon{
+            width:250px;
+            height:70px;
+            float: left;
+        }
+
+        .logo{
+            color: #fff;
+            font-family: Arial;
+            font-size: 45px;
+            margin-top: 19px;
+            margin-left: 15px;
+        }
+
+        .logo:focus{
+            outline: none;
+        }
+
+        .content{
+            width:1200px;
+            height:auto;
+            margin:auto;
+            color: #fff;
+            position:relative;
+        }
+
+        .content .par{
+            padding-left: 20px;
+            padding-bottom: 25px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            font-family: Arial;
+            margin-top: 35px;
+        }
+
+        .content h2{
+            margin-top: 5%;
+            padding-left: 20px;
+            letter-spacing: 2px;
+            font-family: 'Times New Roman';
+            font-size: 40px;
+        }
+
+        .img{
+            width:250px;
+            height:380px;
+            position:absolute;
+            top:99px;
+            left:870px;
+        }
+
+        .content .cn{
+            width:160px;
+            height:40px;
+            cursor:pointer;
+            background-color:#ff7200;
+            border:none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+
+        .content .cn a{
+            text-decoration: none;
+            color: #150c0c;
+            transition: 0.3s ease-in-out;
+        }
+
+        .content .cn:hover {
+            background-color: #fff;
+        }
+
+        .social-icons{
+            width:200px;
+            height:60px;
+            margin-top: 20px;
+            margin-left: 188px;
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .social-icons a img{
+            transition: 0.4s ease-in-out;
+        }
+
+        .social-icons a img:hover{
+            transform: scale(1.3);
+        }
+
+        .foot{
+            width:100%;
+            height:60px;
+            margin:auto;
+            background:linear-gradient(to top,rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%);
+            /* background:#fff; */
+            position:absolute;
+            bottom:0px;
+            left:4px;
+        }
+
+        .hh{
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top:20px;
+            letter-spacing: 1px;
+            font-family: Arial;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="icon">
+                <h2 class="logo">About US</h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Discover Our Team's Story</h2>
+            <p class="par">At Real Tech, we’re a passionate team of tech enthusiasts, driven by innovation<br> and collaboration. Discover our journey, values, and the creative minds<br> behind the solutions we build for a better tomorrow.<br>Toghether we are ReaL TecHs</p>
+
+            <button class="cn"><a href="#">Learn More</a></button>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://youtube.com"><img
+                    src="https://www.citypng.com/public/uploads/preview/hd-white-youtube-yt-logo-symbol-icon-png-704081694687174hznqiiqmti.png"
+                    alt="Youtube" height="30"></a>
+            <a href="https://instagram.com"><img
+                    src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png"
+                    alt="Instagram" height="30"></a>
+            <a href="https://facebook.com"><img
+                    src="https://cdn.pixabay.com/photo/2022/09/09/00/35/facebook-7442092_1280.png" alt="facebook"
+                    height="30"></a>
+            <a href="https://twitter.com"><img src="https://clipartcraft.com/images/white-twitter-logo-flat-3.png"
+                    alt="Twitter" height="30"></a>
+        </div>
+
+        <div class="img">
+            <img src="realtech.png" alt="" height="400">
+        </div>
+
+        <div class="foot">
+            <div class="foot-content">
+                <div class="hh">
+                    <h2>ReaL TecHs 2025 &copy; | All Rights Reserved</h2>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

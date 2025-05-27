@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 120vh;
+            /* background-color: #020222; */
+            background: linear-gradient(to top, rgba(32, 32, 137, 0.559)50%, rgba(32, 32, 137, 0.559)50%), url(realtech.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .nav-bar {
+            width: 100%;
+            height: 75px;
+            margin: auto;
+            background: #020222;
+        }
+
+        .icon {
+            width: 380px;
+            height: 70px;
+            float: left;
+        }
+
+        .logo {
+            float: left;
+            padding-left: 10px;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: Arial;
+            color: #fff;
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+        .logo:focus {
+            outline: none;
+        }
+
+        .menu {
+            width: 400px;
+            height: 70px;
+            float: left;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin-top: 27px;
+            margin-left: 62px;
+            font-size: 18px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial;
+            color: #fff;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff7200;
+        }
+
+        .search {
+            width: 330px;
+            margin-left: 330px;
+            float: left;
+            margin-top: 3px;
+        }
+
+        .srch {
+            width: 200px;
+            height: 40px;
+            font-family: 'Times New Roman';
+            background: transparent;
+            margin-top: 13px;
+            float: left;
+            border: 1px solid #ff7200;
+            color: #fff;
+            font-size: 16px;
+            border-right: none;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            color: #020222;
+            background: #ff7200;
+            border: 2px solid #ff7200;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-top: 13px;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #fff;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .srch:focus {
+            outline: none;
+        }
+
+        .box1 {
+            width: 420px;
+            height: 388px;
+            margin: auto;
+            position: absolute;
+            background: #020222d4;
+            /* background:hsl(219.3, 67.4%, 16.9%);   fpr footer*/
+            top: 190px;
+            left: 50px;
+            border: 0.5px solid #fff;
+        }
+
+        .content {
+            width: 350px;
+            height: 50px;
+            background: #9db5ef;
+            position: absolute;
+            top: 100px;
+            left: 570px;
+        }
+
+        .logo1 {
+            font-family: Arial;
+            font-weight: bolder;
+            /* font-style: oblique; */
+            color: #01011afd;
+            font-size: 40px;
+        }
+
+        .logo:focus {
+            outline: none;
+        }
+
+        .course1 {
+            width: 250px;
+            height: 200px;
+            float: left;
+            margin-left: 97px;
+            transition: 0.3s ease;
+        }
+
+        .des1 {
+            width: 400px;
+            height: 40px;
+            float: left;
+            margin-top: 55px;
+            margin-left: 19px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 1px;
+            /* border: 1px solid #fff; */
+            border-radius: 3px;
+            color: #fff;
+        }
+
+        .riss {
+            font-size: 20px;
+            font-family: Arial;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 30px;
+        }
+
+        .btnn {
+            float: left;
+            margin-top: 31px;
+            margin-left: 10px;
+        }
+
+        .btn1 {
+            width: 400px;
+            height: 40px;
+            color: #020222;
+            background: #ff7200;
+            /* border: 2px solid #ff7200; */
+            border-radius: 5px;
+            margin-top: 13px;
+            font-size: 19px;
+            transition: 0.3s ease;
+        }
+
+        .btn1:hover {
+            background: #fff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .box2 {
+            width: 420px;
+            height: 388px;
+            position: absolute;
+            top: 190px;
+            left: 547px;
+            background: #020222d4;
+            margin: auto;
+            border: 0.5px solid #fff;
+        }
+
+        .course2 {
+            width: 250px;
+            height: 200px;
+            float: left;
+            margin-left: 97px;
+        }
+
+        .des2 {
+            width: 400px;
+            height: 40px;
+            float: left;
+            margin-top: 55px;
+            margin-left: 19px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 1px;
+            /* border: 1px solid #fff; */
+            border-radius: 3px;
+            color: #fff;
+        }
+
+        .riss2 {
+            font-size: 20px;
+            font-family: Arial;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 30px;
+        }
+
+        .box3 {
+            width: 420px;
+            height: 388px;
+            position: absolute;
+            top: 190px;
+            left: 1048px;
+            background: #020222d4;
+            margin: auto;
+            border: 0.5px solid #fff;
+        }
+
+        .course3 {
+            width: 250px;
+            height: 200px;
+            float: left;
+            margin-left: 97px;
+        }
+
+        .des3 {
+            width: 400px;
+            height: 40px;
+            float: left;
+            margin-top: 55px;
+            margin-left: 19px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 1px;
+            /* border: 1px solid #fff; */
+            border-radius: 3px;
+            color: #fff;
+        }
+
+        .riss3 {
+            font-size: 20px;
+            font-family: Arial;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        .btn2 {
+            width: 300px;
+            height: 50px;
+            color: #fff;
+            background: hsl(219.3, 67.4%, 16.9%);
+            /* border: 2px solid #ff7200; */
+            border-radius: 5px;
+            position: absolute;
+            top: 640px;
+            left: 580px;
+            font-size: 19px;
+            transition: 0.3s ease;
+        }
+
+        .btn2:hover {
+            transform: scale(1.1);
+        }
+
+        .foot {
+            /* background:hsl(219.3, 67.4%, 16.9%); */
+            background: #020222;
+            width: 100%;
+            height: 230px;
+            margin: auto;
+            position: absolute;
+            bottom: 0px;
+            top: 850px;
+        }
+
+        .hh{
+            width:300px;
+            height:140px;
+            color: #fff;
+            font-size: 14px;
+            font-family: Arial;
+            float: left;
+            margin-top: 10px;
+            margin-left: 27px;
+        }
+
+
+        .list{
+            float: left;
+            margin-top: 20px;
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+            line-height: 30px;
+        }
+
+        .list li a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .list li a:hover{
+            color: yellow;
+        }
+
+        .hh2{
+            width:300px;
+            height:140px;
+            color: #fff;
+            font-size: 14px;
+            font-family: Arial;
+            float: left;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .list2{
+            float: left;
+            margin-top: 20px;
+            list-style: none;
+            /* text-decoration: none;
+            color: #fff; */
+            line-height: 30px;
+        }
+
+        .list2 li a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .list2 li a:hover{
+            color:yellow;
+        }
+
+        .hh3{
+            width:300px;
+            height:140px;
+            color: #fff;
+            font-size: 14px;
+            font-family: Arial;
+            float: left;
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+
+        .list3{
+            float:left;
+            margin-top: 20px;
+            list-style: none;
+            line-height: 30px;
+        }
+
+        .list3 li a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .list3 li a:hover{
+            color:yellow;
+        }
+
+        .hh4{
+            width:300px;
+            height:140px;
+            color: #fff;
+            font-size: 14px;
+            font-family: Arial;
+            float: left;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+
+        .list4{
+            float:left;
+            margin-top: 20px;
+            list-style: none;
+            line-height: 30px;
+            transition: 0.3s ease;
+        }
+
+        .list4 li a{
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s ease;
+        }
+
+        .list4 li a:hover img{
+            transform: scale(1.2);
+        }    
+        
+        .end{
+            width:100%;
+            height:40px;
+            position: absolute;
+            background:transparent;
+            top:195px;
+            text-align: center;
+            color:#fff;
+            font-family: Arial;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="icon">
+                <h2 class="logo">ReaL TecHs</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="index1.html">HOME</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to search">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="logo1">Premium Courses</h2>
+        </div>
+
+        <div class="box1">
+            <div class="course1">
+                <img src="https://p1.hiclipart.com/preview/843/922/493/python-logo-programming-language-computer-programming-highlevel-programming-language-generalpurpose-programming-language-computer-software-objectoriented-programming-django-png-clipart.jpg"
+                    alt="Python Course" height="230">
+            </div>
+
+            <div class="des1">
+                <h2 class="riss">The Ultimate Job ready Python Course</h2>
+            </div>
+
+            <div class="btnn"><a href="#"><button class="btn1">View Course</button></a></div>
+        </div>
+
+        <div class="box2">
+            <div class="course2">
+                <img src="https://thumbs.dreamstime.com/b/c-programming-computer-language-logo-251853143.jpg"
+                    alt="C++ course" height="230">
+            </div>
+
+            <div class="des2">
+                <h2 class="riss2">C++ tutorials for beginners and Course.</h2>
+            </div>
+
+            <div class="btnn"><a href="#"><button class="btn1">View Course</button></a></div>
+        </div>
+
+        <div class="box3">
+            <div class="course3">
+                <img src="https://www.citypng.com/public/uploads/preview/hd-java-logo-transparent-background-11662223548cwxewzuici.png?v=2023052407"
+                    alt="java Course" height="230">
+            </div>
+
+            <div class="des3">
+                <h2 class="riss3">Java tutorials for beginners and Practise Bootcamp Course.</h2>
+            </div>
+
+            <div class="btnn"><a href="#"><button class="btn1">View Course</button></a></div>
+        </div>
+
+        <div class="btnn"><a href="#"><button class="btn2">Explore More</button></a></div>
+
+        <div class="foot">
+            <div class="foot-content">
+                <div class="hh">
+                    <h2 class="main">Main</h2>
+                    <div class="list">
+                        <li><a href="login.html">Home</a></li>
+                        <li><a href="aboutus.html">Contact</a></li>
+                        <li><a href="#">Work With Us</a></li>
+                        <li><a href="#">My Gear</a></li>
+                    </div>
+                </div>
+
+                <div class="hh2">
+                    <h2 class="main2">Learn</h2>
+                    <div class="list2">
+                        <li><a href="login.html">Courses</a></li>
+                        <li><a href="aboutus.html">Tutorials</a></li>
+                        <li><a href="#">Notes</a></li>
+                    </div>
+                </div>
+
+                <div class="hh3">
+                    <h2 class="main3">Legal</h2>
+                    <div class="list3">
+                        <li><a href="login.html">Terms</a></li>
+                        <li><a href="aboutus.html">Privacy</a></li>
+                        <li><a href="#">Refund</a></li>
+                    </div>
+                </div>
+
+                <div class="hh4">
+                    <h2 class="main4">Social</h2>
+                    <div class="list4">
+                        <li><a href="https://youtube.com"><img
+                    src="https://www.citypng.com/public/uploads/preview/hd-white-youtube-yt-logo-symbol-icon-png-704081694687174hznqiiqmti.png"
+                    alt="Youtube" height="25"></a></li>
+                        <li><a href="https://instagram.com"><img
+                    src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png"
+                    alt="Instagram" height="25"></a></li>
+                        <li><a href="https://facebook.com"><img
+                    src="https://cdn.pixabay.com/photo/2022/09/09/00/35/facebook-7442092_1280.png" alt="facebook"
+                    height="25"></a></li>
+                        <li><a href="https://twitter.com"><img src="https://clipartcraft.com/images/white-twitter-logo-flat-3.png"
+                    alt="Twitter" height="25"></a></li>
+                    </div>
+                </div>
+
+                <div class="end">
+                    <h2>ReaL TecHs 2025 &copy; | All Rights Reserved</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

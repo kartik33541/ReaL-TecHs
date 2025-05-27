@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            /* this right below is to blur background */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url('1.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+
+        .navbar {
+            width: 1200px;
+            height: 75px;
+            margin: auto;
+        }
+
+        .icon {
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        .logo {
+            /* font-weight: bold; */
+            font-size: 32px;
+            color: #ce2222;
+            padding-left: 20px;
+            padding-top: 10px;
+            float: left;
+            font-family: Arial;
+        }
+
+        .logo:focus {
+            outline: none;
+        }
+
+        .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin-top: 27px;
+            margin-left: 62px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial;
+            color: #fff;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff7200;
+        }
+
+        .search {
+            width: 330px;
+            margin-left: 270px;
+            float: left;
+        }
+
+        .srch {
+            font-family: 'Times New Roman';
+            width: 200px;
+            height: 40px;
+            margin-top: 13px;
+            background: transparent;
+            border: 1px solid #ff7200;
+            color: #fff;
+            float: left;
+            border-right: none;
+            font-size: 16px;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            color: navy;
+            background: #ff7200;
+            border: 2px solid #ff7200;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-top: 13px;
+            font-size: 15px;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn:hover{
+            background: #fff;
+        }
+
+        .srch:focus {
+            outline: none;
+        }
+
+        .content {
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: #fff;
+            position: relative;
+        }
+
+        .content .par {
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+
+        .content h1 {
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 2px;
+            font-family: 'Times New Roman';
+            font-size: 50px;
+        }
+
+        .content .cn {
+            width: 160px;
+            height: 40px;
+            cursor: pointer;
+            background: #ff7200;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .content .cn a {
+            text-decoration: none;
+            color: #000;
+            transition: 0.4s ease;
+        }
+
+        .cn:hover {
+            background-color: #fff;
+        }
+
+        .content span {
+            color: #ff7200;
+            font-size: 60px;
+        }
+
+        .social-icons {
+            width: 250px;
+            height: 75px;
+            margin-top: 17px;
+            margin-left: 190px;
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+
+        .social-icons a img {
+            transition: 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Real TecHs</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to search">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Web Design & <br><span>Development</span> <br> Course</h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus yehloow fox pariatur <br>
+                accusamus quis ut cumque architecto! Voluptate, dolorum ea deleniti <br>incidunt quasi nisi earum
+                <br>iusto amet aliquid rerum numquam voluptatibus corrupti <br> veniam in qui unde.
+            </p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://youtube.com"><img
+                    src="https://www.citypng.com/public/uploads/preview/hd-white-youtube-yt-logo-symbol-icon-png-704081694687174hznqiiqmti.png"
+                    alt="Youtube" height="30"></a>
+            <a href="https://instagram.com"><img
+                    src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png"
+                    alt="Instagram" height="30"></a>
+            <a href="https://facebook.com"><img
+                    src="https://cdn.pixabay.com/photo/2022/09/09/00/35/facebook-7442092_1280.png" alt="facebook"
+                    height="30"></a>
+            <a href="https://twitter.com"><img src="https://clipartcraft.com/images/white-twitter-logo-flat-3.png"
+                    alt="Twitter" height="30"></a>
+        </div>
+    </div>
+</body>
+
+</html>
